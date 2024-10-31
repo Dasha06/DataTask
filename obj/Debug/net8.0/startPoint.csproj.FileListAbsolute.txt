@@ -1,0 +1,14 @@
+/home/gara/csharp/startPoint/bin/Debug/net8.0/startPoint
+/home/gara/csharp/startPoint/bin/Debug/net8.0/startPoint.deps.json
+/home/gara/csharp/startPoint/bin/Debug/net8.0/startPoint.runtimeconfig.json
+/home/gara/csharp/startPoint/bin/Debug/net8.0/startPoint.dll
+/home/gara/csharp/startPoint/bin/Debug/net8.0/startPoint.pdb
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.GeneratedMSBuildEditorConfig.editorconfig
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.AssemblyInfoInputs.cache
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.AssemblyInfo.cs
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.csproj.CoreCompileInputs.cache
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.dll
+/home/gara/csharp/startPoint/obj/Debug/net8.0/refint/startPoint.dll
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.pdb
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.genruntimeconfig.cache
+/home/gara/csharp/startPoint/obj/Debug/net8.0/ref/startPoint.dll
