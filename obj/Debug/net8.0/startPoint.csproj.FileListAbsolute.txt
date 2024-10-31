@@ -12,3 +12,4 @@
 /home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.pdb
 /home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.genruntimeconfig.cache
 /home/gara/csharp/startPoint/obj/Debug/net8.0/ref/startPoint.dll
+/home/gara/csharp/startPoint/obj/Debug/net8.0/startPoint.sourcelink.json
