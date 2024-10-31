@@ -25,7 +25,7 @@ class ShowTime {
         int leng = times.Count;
         TimeSpan[] tim = new TimeSpan[leng];
         int[] duration = new int[leng];
-        for (int i = 0; i < leng; i++)
+        for (int i = 0; i < leng; i++) // разделение ввода на два массива
         {
             tim[i] = TimeSpan.Parse(times[i].Split(' ')[0]);
             duration[i] = int.Parse(times[i].Split(' ')[1]);
@@ -33,6 +33,7 @@ class ShowTime {
         
         string startTime = worktime.Split('-')[0];
         string endTime = worktime.Split('-')[1];
+        // создание TimeSpan начала и конца дня из working times
         TimeSpan beginDay = new TimeSpan(int.Parse(startTime.Split(':')[0]), int.Parse(startTime.Split(':')[1]), 00);
         TimeSpan endDay = new TimeSpan(int.Parse(endTime.Split(':')[0]), int.Parse(endTime.Split(':')[1]), 00);
         Console.WriteLine(String.Join("\n", AvailablePeriods(tim, duration, beginDay, endDay, consTime)));
@@ -48,7 +49,7 @@ class ShowTime {
             while (currentTime < endWorkingTime && indexStartInterval < startTimes.Length)
             {
                 var duration = durations[indexStartInterval];
- 
+                // проверка что свободное время меньше начала занятого промежутка и свободный промежуток больше или равен времени консультации
                 if ((currentTime <= startTimes[indexStartInterval])
                  && ((startTimes[indexStartInterval]-currentTime) >= new TimeSpan(0, consultationTime, 0)))
                 {
@@ -63,7 +64,7 @@ class ShowTime {
                 }
  
             }
-            
+            // проверка последнего свободного времени
             if (currentTime < endWorkingTime && (endWorkingTime - currentTime) >= new TimeSpan(0, consultationTime, 0))
             {
                 var interval = GetIntervalString(currentTime, currentTime+TimeSpan.FromMinutes(consultationTime));
