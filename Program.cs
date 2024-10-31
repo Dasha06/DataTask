@@ -65,10 +65,11 @@ class ShowTime {
  
             }
             // проверка последнего свободного времени
-            if (currentTime < endWorkingTime && (endWorkingTime - currentTime) >= new TimeSpan(0, consultationTime, 0))
+            while (currentTime < endWorkingTime && (endWorkingTime - currentTime) >= new TimeSpan(0, consultationTime, 0))
             {
                 var interval = GetIntervalString(currentTime, currentTime+TimeSpan.FromMinutes(consultationTime));
                 result.Add(interval);
+                currentTime = currentTime.Add(new TimeSpan(0, consultationTime, 0));
             }
  
             return result.ToArray();
